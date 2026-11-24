@@ -1,0 +1,9 @@
+# Ignore build artifacts
+src/
+src.tmp/
+*.o
+libnv.so*
+libnv.a
+
+# Ignore local LSP cache
+.ccls-cache/

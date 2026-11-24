@@ -1,0 +1,10 @@
+prefix=@PREFIX@
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libnv
+Description: FreeBSD name/value pairs library
+Version: 1
+Requires.private: libbsd-overlay
+Cflags: -I${includedir}/libnv
+Libs: -L${libdir} -lnv
