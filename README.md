@@ -42,8 +42,7 @@ make install PREFIX=/usr DESTDIR="$pkgdir"
 ## Usage
 
 The headers are installed as `<sys/nv.h>`, `<sys/cnv.h>` and `<sys/dnv.h>`
-under `include/libnv`. pkg-config adds that path, libbsd's header flags and
-`-lnv`:
+under `include/libnv`. pkg-config adds that path and `-lnv`.
 
 ```sh
 cc -o prog prog.c $(pkg-config --cflags --libs libnv)

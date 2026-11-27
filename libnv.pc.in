@@ -5,6 +5,5 @@ includedir=${prefix}/include
 Name: libnv
 Description: FreeBSD name/value pairs library
 Version: 1
-Requires.private: libbsd-overlay
-Cflags: -I${includedir}/libnv
+Cflags: -I${includedir}/libnv -D__printflike(a,b)=__attribute__((__format__(__printf__,a,b)))
 Libs: -L${libdir} -lnv
