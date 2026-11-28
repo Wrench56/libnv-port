@@ -6,4 +6,4 @@ Name: libnv
 Description: FreeBSD name/value pairs library
 Version: 1
 Cflags: -I${includedir}/libnv -D__printflike(a,b)=__attribute__((__format__(__printf__,a,b)))
-Libs: -L${libdir} -lnv
+Libs: -L${libdir} -Wl,-rpath,${libdir} -lnv
